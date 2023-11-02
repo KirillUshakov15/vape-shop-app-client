@@ -1,0 +1,46 @@
+.container{
+  .avatar{
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 4px black;
+  }
+
+  width: 100%;
+
+  .titleContainer{
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    max-width: 100%;
+
+    h1{
+      //word-break:break-all;
+      overflow-wrap: break-word;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+
+
+  p{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+
+    @media (min-width: 1200px) {
+      font-size: 20px;
+    }
+  }
+
+  Button{
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .divider{
+    width: 100%;
+  }
+}

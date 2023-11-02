@@ -1,0 +1,1 @@
+export {ProductInfoModal} from './ProductInfoModal'

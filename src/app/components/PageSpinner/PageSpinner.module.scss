@@ -1,0 +1,6 @@
+@import "../../App.module.scss";
+
+.wrapper{
+  @include align-center;
+  min-height: $bodyHeight;
+}

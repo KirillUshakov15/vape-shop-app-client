@@ -1,0 +1,82 @@
+@import "../../App.module.scss";
+
+.wrapper {
+
+  @include align-center;
+
+  min-height: $bodyHeight;
+
+
+  .divider{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    width: 50%;
+  }
+
+  h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+
+    @media (max-width: 420px) {
+      font-size: 30px;
+    }
+  }
+
+  p{
+    font-weight: bold;
+    font-size: 24px;
+    width: 50%;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+    margin-bottom: 15px;
+  }
+
+  Button{
+    //font-size: 30px;
+    width: 50%;
+  }
+
+  @media (max-width: 768px){
+    Button, p, .divider{
+      width: 85%;
+    }
+
+    p{
+      font-size: 18px;
+    }
+  }
+}
+
+.buttonsContainer{
+  //@include align-center;
+  width: 50%;
+  margin-top: -25px;
+  padding: 20px;
+
+  @media (max-width: 768px){
+    width: 80%;
+
+  }
+
+  Button{
+    font-size: 26px;
+    width: 100%;
+    margin-top: 20px;
+
+    i{
+      font-size: 25px;
+      margin-right: 10px;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 17px;
+
+      i{
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+

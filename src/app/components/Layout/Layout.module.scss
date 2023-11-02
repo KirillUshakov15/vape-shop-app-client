@@ -1,0 +1,64 @@
+@import "../../App.module.scss";
+
+@mixin wrapper{
+  color: black;
+  min-width: 320px;
+}
+
+.wrapper{
+  @include wrapper;
+  background: linear-gradient(180deg, white, #e0e0de);
+}
+
+.wrapperMainPage{
+  background-image: url("../../assets/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  //background-attachment: fixed;
+  background-size: cover;
+}
+
+.header{
+
+  width: 100%;
+  height: 350px;
+  @include align-center;
+
+  img{
+    width: 295px;
+    height: 350px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    img{
+      width: 245px;
+      height: 300px;
+    }
+  }
+}
+
+@mixin bodyTemp{
+  width: 100%;
+  min-height: $bodyHeight;
+  //position: relative;
+  margin-top: 0;
+}
+
+.body {
+  @include bodyTemp;
+  overflow: auto;
+}
+
+.footer{
+  color: white;
+  margin-top: 20px;
+  height: 80px;
+  background-color: #25282e;
+}
+
+@media (max-height: 800px) or (max-width: 768px){
+  .footer{
+    margin-top: 50px;
+  }
+}

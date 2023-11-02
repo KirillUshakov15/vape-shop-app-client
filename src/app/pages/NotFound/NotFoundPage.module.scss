@@ -1,0 +1,32 @@
+@import "../../App.module.scss";
+
+.wrapper{
+  width: 100%;
+  @include align-center;
+  min-height: $bodyHeight;
+
+  div{
+    h1{
+      font-size: 100px;
+      text-align: center;
+    }
+
+    h2{
+      text-align: center;
+    }
+
+    h2, p{
+      margin-bottom: 20px;
+    }
+
+    .buttonContainer{
+      Button{
+        width: 100%;
+      }
+    }
+  }
+
+
+
+
+}

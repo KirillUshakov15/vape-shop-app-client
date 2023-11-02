@@ -1,0 +1,49 @@
+@import "../../App.module.scss";
+
+
+
+.wrapper{
+  margin-top: 30px;
+  @include align-center;
+  //min-height: $bodyHeight;
+
+  padding: 10px;
+  h1{
+    text-align: center;
+  }
+
+  Button{
+    width: 50%;
+    margin-top: 15px;
+
+    i{
+      font-size: 15px;
+      margin-right: 10px;
+    }
+  }
+
+  .searchInput{
+    width: 50%;
+    margin-bottom: 15px;
+  }
+
+  .buttonsContainer{
+    Button{
+      width: 100%;
+    }
+  }
+
+}
+
+@media (max-width: 1220px) {
+  .wrapper{
+    h1{
+      text-align: center;
+    }
+
+    .searchInput{
+      width: 80%;
+    }
+  }
+
+}

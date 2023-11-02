@@ -1,0 +1,181 @@
+@import "../../App.module.scss";
+@import "../../ui/Image/Image.module.scss";
+
+.editProductsContainer{
+  padding: 10px;
+  width: 50%;
+  min-height: 450px;
+  overflow-y: auto;
+  max-height: 670px;
+  background-color: white;
+  border-radius: 10px;
+
+  .notFoundLabel{
+    margin-top: 50px;
+    text-align: center;
+  }
+}
+
+.editProductContainer{
+  display: flex;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1.5px solid black;
+  background-color: #e4e4ed;
+
+  .img{
+    @include image;
+    width: 100px;
+    height: 100px;
+  }
+
+  .textContainer{
+    margin: auto auto auto 30px;
+    width: 55%;
+
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+
+    p, h3{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 10px;
+    }
+  }
+
+  .toolsContainer{
+    width: 20%;
+    display: none;
+  }
+}
+
+@media (max-width: 1220px){
+  .editProductsContainer{
+    width: 80%;
+    .editProductContainer{
+      display: flex;
+      flex-flow: wrap;
+      align-content: flex-start;
+
+      .img{
+        @include image;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+      }
+
+      .textContainer{
+        margin: 0;
+        text-align: center;
+        width: 100%;
+
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+      }
+
+      .toolsContainer{
+        display: flex;
+        justify-content: center;
+        margin: 20px auto auto;
+
+        i{
+          cursor: pointer;
+          margin-right: 15px;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+.editProductContainer:hover{
+  background-color: #e4e4ed;
+
+  cursor: pointer;
+  .toolsContainer{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+
+    i{
+      cursor: pointer;
+      margin-right: 15px;
+      font-size: 25px;
+    }
+  }
+}
+
+.productContainer{
+
+  //display: inline-block;
+
+  border: 2px solid #25282e;
+  border-radius: 10px;
+  padding: 10px;
+  //min-width: 150px;
+  width: 300px;
+  height: 500px;
+  background-color: #D4D4D2;
+  margin: auto;
+
+  .avatar{
+    @include image;
+    width: 300px;
+    height: 300px;
+  }
+
+  .titleContainer{
+
+    h1{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+
+
+  Button{
+    margin-top: auto;
+    font-size: 27px;
+  }
+
+  Button:hover{
+    text-decoration: underline
+  }
+
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  .productContainer{
+    width: 200px;
+    height: 370px;
+
+    .avatar{
+      width: 200px;
+      height: 200px;
+    }
+
+    h1{
+      font-size: 25px;
+    }
+
+    Button{
+      margin-top: auto;
+      font-size: 20px;
+    }
+  }
+}

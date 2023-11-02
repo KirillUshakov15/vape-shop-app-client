@@ -1,0 +1,75 @@
+.wrapper{
+  display: flex;
+  padding: 0;
+  input{
+    display: none;
+  }
+
+  @media (min-width: 1224px) {
+    display: flex;
+  }
+
+  Button{
+    margin-right: 10px;
+    i{
+      margin-right: 5px;
+    }
+  }
+
+  .fileContainer{
+    padding: 10px;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    p{
+      font-weight: bold;
+      font-size: 16px;
+    }
+    i{
+      vertical-align: text-top;
+      cursor: pointer;
+      margin-top: 3px;
+      margin-left: 10px;
+      font-weight: bold;
+    }
+  }
+}
+
+.imageUploaderWrapper{
+
+  cursor: pointer;
+  i{
+    display: none;
+  }
+}
+
+i, h5{
+  display: none;
+}
+
+.imageUploaderWrapper:hover{
+  position: relative;
+  top: 0;
+  opacity: 0.7;
+
+  i{
+    font-size: 220%;
+    display: block;
+    position: absolute;
+    //color: black;
+    //color: #6e6d6d;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  h5{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+  }
+}
