@@ -51,7 +51,7 @@ export const Admin: FC = observer(() => {
 
             <h1>Редактирование товаров</h1>
 
-            <Button onClick={openCreateProductModal}>
+            <Button className={style.button} onClick={openCreateProductModal}>
                 <i className='bx bx-list-plus'></i>
                 Добавить новый товар
             </Button>
@@ -63,7 +63,7 @@ export const Admin: FC = observer(() => {
 
             <Divider/>
 
-            <Button onClick={logout}>
+            <Button className={style.button} onClick={logout}>
                 <i className='bx bx-exit'></i>
                 Выход
             </Button>

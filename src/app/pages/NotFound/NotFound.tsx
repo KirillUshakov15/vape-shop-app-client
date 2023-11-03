@@ -10,7 +10,7 @@ export const NotFound: FC = () => {
             <div>
                 <h1>404</h1>
                 <h2>Ничего не найдено</h2>
-                <p>Запрашиваема Вами страница не найдена</p>
+                <p>Запрашиваемая Вами страница не найдена</p>
                 <div className={style.buttonContainer}>
                     <Link to={MAIN_PAGE_ROUTE}>
                         <Button>Вернуться на главную</Button>

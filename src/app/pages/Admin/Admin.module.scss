@@ -13,6 +13,10 @@
   }
 
   Button{
+    margin-top: 15px;
+  }
+
+  .button{
     width: 50%;
     margin-top: 15px;
 
@@ -41,9 +45,15 @@
       text-align: center;
     }
 
+    .button{
+      width: 90%;
+    }
+
     .searchInput{
       width: 80%;
     }
   }
+
+
 
 }
