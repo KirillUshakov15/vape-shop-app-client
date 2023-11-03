@@ -4,7 +4,7 @@
   z-index: 999999;
   position: absolute;
   top: 0;
-  transform: translateY(-110%);
+  transform: translateY(-150%);
   transition: 0.5s;
   //border: 1.5px solid #0d7534;
 }
@@ -21,6 +21,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  p{
+    text-align: center;
+  }
 
   .icon{
     margin: 15px;

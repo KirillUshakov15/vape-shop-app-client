@@ -27,6 +27,11 @@ export class AuthStore{
         this.isLoading = bool
     }
 
+    exit(){
+        this.setAuth(false)
+        localStorage.removeItem('token')
+    }
+
     async checkEmail(email: string){
         try{
             this.setLoading(true)
@@ -56,8 +61,7 @@ export class AuthStore{
 
     async logout(){
         await AuthService.logout();
-        this.setAuth(false)
-        localStorage.removeItem('token')
+        this.exit()
     }
 
     async refreshAccess(){
@@ -67,7 +71,8 @@ export class AuthStore{
             this.setAuth(true)
         }
         catch (e: any) {
-            popupStore.show(e?.response?.data?.message, 'ERROR')
+            this.exit()
+            //popupStore.show(e?.response?.data?.message, 'ERROR')
         }
     }
 

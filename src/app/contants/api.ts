@@ -1,4 +1,4 @@
-export const API_SERVER_URL = 'http://localhost:5000' // 'http://31.129.106.2:5000' //'http://reliquid.ru'
+export const API_SERVER_URL = 'http://31.129.106.2:5000' //'http://localhost:5000'//'http://reliquid.ru'
 export const API_SERVER_IMAGES_PATH: string = API_SERVER_URL + '/images/'
 
 export const CHECK_EMAIL = '/auth/check-email'
