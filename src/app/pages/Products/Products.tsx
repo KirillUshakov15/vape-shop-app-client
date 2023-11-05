@@ -7,7 +7,7 @@ import {Divider, Input} from "../../ui";
 import useSearch from "../../hooks/useSearch";
 import {ProductInfoModal} from "../../components";
 import {IProduct} from "../../models/IProduct";
-import {PRODUCT_INFO_MODAL} from "../../contants/modal-names";
+import {PRODUCT_INFO_MODAL} from "../../constants/modal-names";
 
 export const Products: FC = observer(() => {
     const [value, setValue] = useState<string>('')

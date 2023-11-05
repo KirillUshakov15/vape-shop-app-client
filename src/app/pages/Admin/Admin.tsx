@@ -3,14 +3,14 @@ import style from './Admin.module.scss'
 import {Button, Divider, Input} from "../../ui";
 import {observer} from "mobx-react-lite";
 import {Context} from "../../../index";
-import {CREATE_PRODUCT_MODAL, DELETE_PRODUCT_MODAL} from "../../contants/modal-names";
+import {CREATE_PRODUCT_MODAL, DELETE_PRODUCT_MODAL} from "../../constants/modal-names";
 import {EditProductModal} from "../../components";
 import {ProductsEditList} from "../../components/Products";
 import {IProduct} from "../../models/IProduct";
 import {DeleteProductModal} from "../../components/ConfirmModal";
 import useSearch from "../../hooks/useSearch";
 import {useNavigate} from "react-router-dom";
-import {ADMIN_LOGIN_PAGE_ROUTE, MAIN_PAGE_ROUTE} from "../../contants/routes";
+import {ADMIN_LOGIN_PAGE_ROUTE, MAIN_PAGE_ROUTE} from "../../constants/routes";
 
 export const Admin: FC = observer(() => {
     const [editableProduct, setEditableProduct] = useState<IProduct | null>(null)

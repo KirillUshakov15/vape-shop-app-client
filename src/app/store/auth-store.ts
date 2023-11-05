@@ -9,7 +9,6 @@ export class AuthStore{
 
     isTrustEmail: boolean = false
 
-
     constructor() {
         makeAutoObservable(this);
     }

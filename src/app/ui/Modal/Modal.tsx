@@ -36,7 +36,7 @@ export const Modal: FC<IModalProps> = observer(({
     return (
         <div className={(isRightName && popupStore.isOpen) ? `${style.modal} ${style.modalActive}`: style.modal} onClick={modalClose}>
             <div className={`${style.modalBody} ${className}`} onClick={e => e.stopPropagation()}>
-                <div className={style.modalHeader}>
+                <div className={style.modalHeader} onClick={e => e.stopPropagation()}>
                     <h4>{title}</h4>
                     <span className={!closable ? `${style.displayNone}` : undefined} onClick={modalClose}>X</span>
                 </div>

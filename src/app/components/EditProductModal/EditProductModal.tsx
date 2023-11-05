@@ -1,6 +1,6 @@
 import React, {FC, useContext, useEffect, useState} from 'react';
 import {Modal} from "../../ui/Modal";
-import {CREATE_PRODUCT_MODAL} from "../../contants/modal-names";
+import {CREATE_PRODUCT_MODAL} from "../../constants/modal-names";
 import {Button, Form, Input, Textarea} from "../../ui";
 import {Uploader} from "../../ui/Uploader";
 import {observer} from "mobx-react-lite";

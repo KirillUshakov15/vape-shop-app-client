@@ -1,6 +1,6 @@
 import React, {FC, useContext} from 'react';
 import {Modal} from "../../ui/Modal";
-import {DELETE_PRODUCT_MODAL} from "../../contants/modal-names";
+import {DELETE_PRODUCT_MODAL} from "../../constants/modal-names";
 import style from "./ConfirmModal.module.scss";
 import {Button} from "../../ui";
 import {observer} from "mobx-react-lite";

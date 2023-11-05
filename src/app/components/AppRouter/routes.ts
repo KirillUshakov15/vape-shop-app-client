@@ -1,6 +1,6 @@
 import React, {FC} from "react";
 import {Main} from "../../pages";
-import {MAIN_PAGE_ROUTE, PRODUCTS_PAGE_ROUTE, ADMIN_LOGIN_PAGE_ROUTE, ADMIN_PAGE_ROUTE} from "../../contants/routes";
+import {MAIN_PAGE_ROUTE, PRODUCTS_PAGE_ROUTE, ADMIN_LOGIN_PAGE_ROUTE, ADMIN_PAGE_ROUTE} from "../../constants/routes";
 
 interface IRoute {
     path: string,

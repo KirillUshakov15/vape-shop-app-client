@@ -4,7 +4,7 @@ import {Context} from "../../../index";
 import style from './Products.module.scss'
 import {Image, Input} from "../../ui";
 import {IProduct} from "../../models/IProduct";
-import {API_SERVER_IMAGES_PATH} from "../../contants/api";
+import {API_SERVER_IMAGES_PATH} from "../../constants/api";
 import noAvailableImage from "../../assets/no-image-available.png";
 
 interface IProps{

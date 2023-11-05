@@ -1,6 +1,6 @@
 import React, {FC, useContext, useState} from 'react';
 import {Modal} from "../../ui/Modal";
-import {REQUEST_MODAL} from "../../contants/modal-names";
+import {REQUEST_MODAL} from "../../constants/modal-names";
 import {Button, Form, Input} from "../../ui";
 import style from './RequestModal.module.scss'
 import {IProduct} from "../../models/IProduct";

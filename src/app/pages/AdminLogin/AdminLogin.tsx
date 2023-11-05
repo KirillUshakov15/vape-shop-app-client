@@ -4,7 +4,7 @@ import {Button, Form, Input} from "../../ui";
 import {observer} from "mobx-react-lite";
 import {Context} from "../../../index";
 import {Link, useNavigate} from "react-router-dom";
-import {ADMIN_PAGE_ROUTE} from "../../contants/routes";
+import {ADMIN_PAGE_ROUTE} from "../../constants/routes";
 import {isCorrectEmail, isRequiredField} from "../../utils/validation-templates";
 
 export const AdminLogin: FC = observer(() => {

@@ -1,5 +1,5 @@
 import $api from "../api";
-import {CHECK_EMAIL, LOGIN, LOGOUT, REFRESH_ACCESS, SEND_PARTNERSHIP_REQUEST} from "../contants/api";
+import {CHECK_EMAIL, LOGIN, LOGOUT, REFRESH_ACCESS, SEND_PARTNERSHIP_REQUEST} from "../constants/api";
 import {AxiosResponse} from "axios";
 import {IPartnership} from "../models/IPartnership";
 

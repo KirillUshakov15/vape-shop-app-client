@@ -4,7 +4,7 @@ import {ConfirmAgeModal, Layout} from "./components";
 import {Modal} from "./ui/Modal";
 import {Button} from "./ui";
 import {Context} from "../index";
-import {CONFIRM_AGE_MODAL} from "./contants/modal-names";
+import {CONFIRM_AGE_MODAL} from "./constants/modal-names";
 
 function App() {
     const [openModal, setOpenModal] = useState<boolean>(false)

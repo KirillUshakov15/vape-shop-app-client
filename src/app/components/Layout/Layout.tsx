@@ -4,7 +4,7 @@ import './Layout.module.scss'
 import style from './Layout.module.scss'
 import {AppRouter} from "../AppRouter";
 import {Link, useLocation} from "react-router-dom";
-import {MAIN_PAGE_ROUTE} from "../../contants/routes";
+import {MAIN_PAGE_ROUTE} from "../../constants/routes";
 import {Alert} from "../../ui";
 import {Context} from "../../../index";
 

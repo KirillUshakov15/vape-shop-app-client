@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import {Button} from "../../ui";
 import {Modal} from "../../ui/Modal";
 import style from './ConfirmModal.module.scss'
-import {CONFIRM_AGE_MODAL} from "../../contants/modal-names";
+import {CONFIRM_AGE_MODAL} from "../../constants/modal-names";
 import {Link, useNavigate} from "react-router-dom";
 
 interface IProps {

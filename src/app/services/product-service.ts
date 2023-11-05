@@ -1,6 +1,6 @@
 import {IProduct} from "../models/IProduct";
 import $api from "../api";
-import {CREATE_PRODUCT, EDIT_PRODUCT, GET_ALL_PRODUCTS} from "../contants/api";
+import {CREATE_PRODUCT, EDIT_PRODUCT, GET_ALL_PRODUCTS} from "../constants/api";
 import {AxiosResponse} from "axios";
 
 export class ProductService{

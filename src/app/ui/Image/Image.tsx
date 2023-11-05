@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import noAvailableImage from '../../assets/no-image-available.png'
-import {API_SERVER_IMAGES_PATH} from "../../contants/api";
+import {API_SERVER_IMAGES_PATH} from "../../constants/api";
 import style from './Image.module.scss'
 
 interface IProps extends React.ImgHTMLAttributes<HTMLImageElement>{

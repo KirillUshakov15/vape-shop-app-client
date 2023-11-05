@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import style from './NotFoundPage.module.scss'
 import {Button} from "../../ui";
 import {Link} from "react-router-dom";
-import {MAIN_PAGE_ROUTE} from "../../contants/routes";
+import {MAIN_PAGE_ROUTE} from "../../constants/routes";
 
 export const NotFound: FC = () => {
     return (

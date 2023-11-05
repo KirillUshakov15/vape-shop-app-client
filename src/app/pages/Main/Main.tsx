@@ -2,10 +2,10 @@ import React, {FC, useContext} from 'react';
 import style from './Main.module.scss'
 import {Button, Divider} from "../../ui";
 import {Link} from "react-router-dom";
-import {INSTAGRAM_ROUTE, MAIN_PAGE_ROUTE, PRODUCTS_PAGE_ROUTE} from "../../contants/routes";
+import {INSTAGRAM_ROUTE, MAIN_PAGE_ROUTE, PRODUCTS_PAGE_ROUTE} from "../../constants/routes";
 import {Context} from "../../../index";
 import {RequestModal} from "../../components";
-import {REQUEST_MODAL} from "../../contants/modal-names";
+import {REQUEST_MODAL} from "../../constants/modal-names";
 import {observer} from "mobx-react-lite";
 
 export const Main: FC = observer(() => {
