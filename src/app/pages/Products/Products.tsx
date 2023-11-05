@@ -28,6 +28,8 @@ export const Products: FC = observer(() => {
 
     useEffect(() => {
         productStore.getAll(searchValue);
+
+        return () => popupStore.close()
     }, [searchValue])
 
     return (

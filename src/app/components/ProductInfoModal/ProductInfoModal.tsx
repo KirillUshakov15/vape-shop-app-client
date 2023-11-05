@@ -1,8 +1,8 @@
-import React, {FC, useContext} from 'react';
+import React, {FC} from 'react';
 import {Modal} from "../../ui/Modal";
 import {PRODUCT_INFO_MODAL} from "../../constants/modal-names";
 import {IProduct} from "../../models/IProduct";
-import {Button, Divider, Image} from "../../ui";
+import {Image} from "../../ui";
 import style from "./ProductInfoModal.module.scss"
 
 interface IProps{
