@@ -30,7 +30,7 @@ export const Main: FC = observer(() => {
                 </Link>
                 <Button onClick={() => popupStore.open(REQUEST_MODAL)}>
                     <i className='bx bx-purchase-tag-alt'></i>
-                    Прайс лист
+                    Прайс-лист
                 </Button>
             </div>
 

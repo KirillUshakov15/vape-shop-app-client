@@ -75,5 +75,5 @@ export default function (){
         return <></>
     }, [])
 
-    return {errors, validateFields, ErrorLabel, isDirty}
+    return {errors, validateFields, ErrorLabel, isDirty, setErrors}
 }

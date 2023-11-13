@@ -9,7 +9,7 @@ import useValidation from "./FormValidator/useValidation";
 
 interface IFormProps extends React.FormHTMLAttributes<HTMLFormElement>{
     children: React.ReactNode
-    onSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
+    onSubmit: () => void;
 }
 
 interface FormExtensions{
@@ -42,10 +42,14 @@ export const Form: FC<IFormProps> & FormExtensions = ({children,onSubmit, ...pro
     const submit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         validateForm();
-        onSubmit(e);
     }
+    useEffect(() => {
+        if(validation.success){
+            onSubmit();
+        }
+    }, [validation.success])
 
-    const validateForm =() => {
+    const validateForm = async () => {
         setValidation({...validation, allFields: true})
     }
 

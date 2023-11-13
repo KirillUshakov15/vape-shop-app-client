@@ -31,7 +31,7 @@ export const RequestModal: FC = observer(() => {
                     <h3>Заявка на сотрудничество</h3>
                     <p>Оставьте свои контактные данные, и наши представители свяжутся с Вами в ближайшее время</p>
 
-                    <Form.Validator name="email" rules={[isRequiredField]}>
+                    <Form.Validator name="name" rules={[isRequiredField]}>
                         <Input
                             placeholder="Укажите свое имя..."
                             value={data.name || ''}

@@ -88,6 +88,4 @@ export class AuthStore{
             this.setLoading(false)
         }
     }
-
-
 }

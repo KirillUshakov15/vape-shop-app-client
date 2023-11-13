@@ -11,27 +11,25 @@ $bodyHeight: calc(100vh - 350px);
     text-decoration: none;
   }
 
-  /*::-webkit-scrollbar{
-    margin-left: 10px;
-    width: 10px;
+  @media (min-width: 1224px) {
+    ::-webkit-scrollbar{
+      margin-left: 10px;
+      width: 10px;
+    }
 
-    @media (max-width: 768px) {
-      width: 5px;
+    ::-webkit-scrollbar-track {
+      //background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: gray;
+      border-radius: 25px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: dimgray;
     }
   }
-
-  ::-webkit-scrollbar-track {
-    //background: #f1f1f1;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: gray;
-    border-radius: 25px;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: dimgray;
-  }*/
 }
 
 @mixin align-center {

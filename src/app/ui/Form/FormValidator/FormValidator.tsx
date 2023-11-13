@@ -24,11 +24,14 @@ export const FormValidator: FC<IFormItemProps> = ({children, name, rules}) => {
         validateFields(value, rules, validation.allFields);
     }, [value, validation.allFields])
 
-    /*useEffect(() => {
-        if(errors.length > 0 && validation.success && validation.allFields) {
+    useEffect(() => {
+        if(!validation.allFields) return
+        if(errors.length > 0) {
             setValidation({...validation, allFields: false, success: false})
         }
-    }, [errors])*/
+
+        if(errors.length <= 0 && !validation.success) setValidation({...validation, allFields: false, success: true})
+    }, [errors])
 
     if(isDirty && errors.length > 0){
         children = React.cloneElement(children, {style: {borderColor: "red"}})
