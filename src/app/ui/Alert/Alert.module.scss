@@ -6,6 +6,7 @@
   top: 0;
   transform: translateY(-150%);
   transition: 0.5s;
+  margin: 15px;
   //border: 1.5px solid #0d7534;
 }
 
@@ -24,6 +25,11 @@
 
   p{
     text-align: center;
+    font-weight: bold;
+
+    @media (max-width: 500px) {
+      font-size: 14px;
+    }
   }
 
   .icon{
@@ -33,6 +39,7 @@
   }
 
   .closeBtn{
+    font-weight: bold;
     border-radius: 5px;
     margin: 15px;
     cursor: pointer;

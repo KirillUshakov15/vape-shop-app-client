@@ -29,8 +29,7 @@ export const FormValidator: FC<IFormItemProps> = ({children, name, rules}) => {
         if(errors.length > 0) {
             setValidation({...validation, allFields: false, success: false})
         }
-
-        if(errors.length <= 0 && !validation.success) setValidation({...validation, allFields: false, success: true})
+        if(errors.length <= 0 && validation.allFields) setValidation({...validation, success: true})
     }, [errors])
 
     if(isDirty && errors.length > 0){

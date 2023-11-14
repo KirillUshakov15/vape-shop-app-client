@@ -26,7 +26,7 @@ export const RequestModal: FC = observer(() => {
 
     return (
         <Modal modalName={REQUEST_MODAL} title="Заявка">
-            <Form onSubmit={submit}>
+            <Form onSubmit={submit} validate={true}>
                 <div className={style.wrapper}>
                     <h3>Заявка на сотрудничество</h3>
                     <p>Оставьте свои контактные данные, и наши представители свяжутся с Вами в ближайшее время</p>
@@ -41,7 +41,7 @@ export const RequestModal: FC = observer(() => {
 
                     <Form.Validator name="email" rules={[...isCorrectEmail]}>
                         <Input
-                            placeholder="Укажите адрес электронной почты..."
+                            placeholder="Укажите E-mail..."
                             value={data.email || ''}
                             onChange={e => setData({...data, email: e.target.value})}
                         />
@@ -49,7 +49,7 @@ export const RequestModal: FC = observer(() => {
 
                     <Form.Validator name="phoneNumber" rules={[...isCorrectPhoneNumber]}>
                         <Input
-                            placeholder="Укажите номер мобильного телефона..."
+                            placeholder="Укажите номер телефона..."
                             value={data.phoneNumber || ''}
                             onChange={e => setData({...data, phoneNumber: e.target.value})}
                         />

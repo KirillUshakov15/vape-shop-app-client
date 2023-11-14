@@ -44,7 +44,7 @@ export const EditProductModal: FC<IProps> = observer(({editableProduct}) => {
         <Modal
             modalName={CREATE_PRODUCT_MODAL}
             title={editableProduct ? "Редактирование товара" : "Создание нового товара"} >
-            <Form onSubmit={submit}>
+            <Form onSubmit={submit} validate={true}>
 
                 <Form.Validator rules={[isRequiredField]}>
                     <Input

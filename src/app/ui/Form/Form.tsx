@@ -9,6 +9,7 @@ import useValidation from "./FormValidator/useValidation";
 
 interface IFormProps extends React.FormHTMLAttributes<HTMLFormElement>{
     children: React.ReactNode
+    validate?: boolean;
     onSubmit: () => void;
 }
 
@@ -36,15 +37,18 @@ export const FormContext = createContext<IValidationContextExtension>({
     setValidation: () => {}
 })
 
-export const Form: FC<IFormProps> & FormExtensions = ({children,onSubmit, ...props}) => {
+export const Form: FC<IFormProps> & FormExtensions = ({children, validate= false, onSubmit, ...props}) => {
     const [validation, setValidation] = useState<IValidation>(validationInitialState)
 
     const submit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        validateForm();
+
+        validate
+            ? validateForm()
+            : onSubmit()
     }
     useEffect(() => {
-        if(validation.success){
+        if(validation.success && validation.allFields){
             onSubmit();
         }
     }, [validation.success])
@@ -54,11 +58,11 @@ export const Form: FC<IFormProps> & FormExtensions = ({children,onSubmit, ...pro
     }
 
     return (
-        <form {...props} onSubmit={submit}>
-            <FormContext.Provider value={{validation, setValidation}}>
+        <FormContext.Provider value={{validation, setValidation}}>
+            <form {...props} onSubmit={submit}>
                 {children}
-            </FormContext.Provider>
-        </form>
+            </form>
+        </FormContext.Provider>
     );
 };
 

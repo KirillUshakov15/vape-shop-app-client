@@ -2,6 +2,7 @@ import {makeAutoObservable} from "mobx";
 import {AuthService} from "../services/auth-service";
 import {popupStore} from "../../index";
 import {IPartnership} from "../models/IPartnership";
+import sendApiErrorMessage from "../utils/send-api-error-message";
 
 export class AuthStore{
     isAuth: boolean = false;
@@ -38,7 +39,7 @@ export class AuthStore{
             this.setIsTrustEmail(true)
         }
         catch (e: any) {
-            popupStore.show(e?.response?.data?.message, 'ERROR')
+            sendApiErrorMessage(e)
             this.setLoading(false)
         }
     }
@@ -53,7 +54,7 @@ export class AuthStore{
             popupStore.show('Добро пожаловать в систему', 'SUCCESS')
         }
         catch (e: any) {
-            popupStore.show(e?.response?.data?.message, 'ERROR')
+            sendApiErrorMessage(e)
             this.setLoading(false)
         }
     }
@@ -84,7 +85,7 @@ export class AuthStore{
             this.setLoading(false)
         }
         catch (e: any) {
-            popupStore.show(e?.response?.data?.message, 'ERROR')
+            sendApiErrorMessage(e)
             this.setLoading(false)
         }
     }

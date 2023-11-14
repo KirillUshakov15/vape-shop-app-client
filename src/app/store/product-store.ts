@@ -2,6 +2,7 @@ import {IProduct} from "../models/IProduct";
 import {popupStore} from "../../index";
 import {ProductService} from "../services/product-service";
 import {action, makeAutoObservable, observable} from "mobx";
+import sendApiErrorMessage from "../utils/send-api-error-message";
 
 export class ProductStore{
     isLoading: boolean = false
@@ -43,7 +44,7 @@ export class ProductStore{
             this.setLoading(false)
         }
         catch (e: any) {
-            popupStore.show(e?.response?.data?.message, 'ERROR')
+            sendApiErrorMessage(e)
             this.setLoading(false)
         }
     }
@@ -57,7 +58,7 @@ export class ProductStore{
             this.setLoading(false)
         }
         catch (e: any) {
-            popupStore.show(e?.response?.data?.message, 'ERROR')
+            sendApiErrorMessage(e)
             this.setLoading(false)
         }
     }
@@ -73,7 +74,7 @@ export class ProductStore{
             this.setLoading(false)
         }
         catch (e: any) {
-            popupStore.show(e?.response?.data?.message, 'ERROR')
+            sendApiErrorMessage(e)
             this.setLoading(false)
         }
     }
@@ -88,7 +89,7 @@ export class ProductStore{
             this.setLoading(false)
         }
         catch (e: any) {
-            popupStore.show(e?.response?.data?.message, 'ERROR')
+            sendApiErrorMessage(e)
             this.setLoading(false)
         }
     }

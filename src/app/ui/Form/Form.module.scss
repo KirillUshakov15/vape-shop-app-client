@@ -5,4 +5,8 @@
   font-size: 13px;
   font-weight: bold;
   color: red;
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
 }
